@@ -1,0 +1,13 @@
+{
+  "name": "string_detector_web_client-angular",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
