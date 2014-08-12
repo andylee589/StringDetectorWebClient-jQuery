@@ -845,10 +845,10 @@ function pageSetUp() {
 		});
 	
 		// activate inline charts
-		runAllCharts();
+		//runAllCharts();
 	
 		// setup widgets
-		setup_widgets_desktop();
+		//setup_widgets_desktop();
 	
 		//setup nav height (dynamic)
 		nav_page_height();
