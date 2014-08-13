@@ -1072,8 +1072,6 @@ function loadJobs(jobs){
            $('.dataTables_paginate').prependTo($(pageGroup))
         },
         'fnInitComplete':function(oSettings){
-
-
         },
         "aaData": jobRecords,
         "aoColumnDefs" : [
@@ -1721,6 +1719,7 @@ $(document).ready(function() {
         }
         connectionId=$.connection.hub.id;
         console.log('Now connected, connection ID=' + connectionId);
+        windowResize();
     }).fail(function (error){
         console.log("connect error");
     });

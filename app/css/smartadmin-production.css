@@ -7334,7 +7334,16 @@ button {
 .table.has-tickbox.smart-form tbody tr td:first-child .checkbox {
   padding: 0px !important;
 }
-.table thead tr,
+.table thead tr{
+    background-color: #eeeeee;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#fafafa));
+    background-image: -webkit-linear-gradient(top, #f2f2f2 0, #fafafa 100%);
+    background-image: -moz-linear-gradient(top, #f2f2f2 0, #fafafa 100%);
+    background-image: -ms-linear-gradient(top, #f2f2f2 0, #fafafa 100%);
+    background-image: -o-linear-gradient(top, #f2f2f2 0, #fafafa 100%);
+    background-image: -linear-gradient(top, #f2f2f2 0, #fafafa 100%);
+    font-size: 12px;
+}
 
 .table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td {
