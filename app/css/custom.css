@@ -21,30 +21,6 @@
 }
 
 
-/*.custom-form header {
-    margin: 0px;
-    padding: 10px 14px 0;;
-}
-
-.custom-form  {
-
-    padding-left: 5px;
-    padding-right: 5px;
-}
-.custom-form section {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.custom-form fieldset{
-    padding: 10px 14px 5px;
-}
-
-.custom-form .lastRow{
-    margin-bottom: 0px;
-}*/
-
-
 /*custom form in view mode */
 .custom-form ,.custom-form-edit  {
 
@@ -267,12 +243,6 @@
 #jobTabPanel .smart-form .state-success input , #jobTabPanel .smart-form .state-success textarea{
     background: none;
 }
-/*#dt_basic_wrapper {
-    height: 650px;
-}
-#dt_basic {
-    height: 100%;
-}*/
 
 /**-------------------------------------------DataTables---------------------------------------------**/
 table.dataTable tbody tr.custom-selected {

@@ -7891,27 +7891,27 @@ button {
  * Reference: http://stackoverflow.com/questions/10592657/scrollbar-stylesheet
  * GitHub Source: https://gist.github.com/jambu/2004633
  */
-.desktop-detected .custom-scroll::-webkit-scrollbar {
+.custom-scroll::-webkit-scrollbar {
   -webkit-overflow-scrolling: touch;
   height: 10px;
   width: 10px;
 }
-.desktop-detected .custom-scroll::-webkit-scrollbar:hover {
+.custom-scroll::-webkit-scrollbar:hover {
   background-color: #E9E9E9;
   border: 1px solid #dbdbdb;
 }
-.desktop-detected .custom-scroll::-webkit-scrollbar-button:start:decrement,
+.custom-scroll::-webkit-scrollbar-button:start:decrement,
 .scrollable::-webkit-scrollbar-button:end:increment {
   background: transparent;
   display: block;
   height: 0;
 }
-.desktop-detected .custom-scroll::-webkit-scrollbar-track {
+.custom-scroll::-webkit-scrollbar-track {
   background-clip: padding-box;
   border-width: 0 0 0 4px;
   border: solid transparent;
 }
-.desktop-detected .custom-scroll::-webkit-scrollbar-track-piece {
+.custom-scroll::-webkit-scrollbar-track-piece {
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
@@ -7919,7 +7919,7 @@ button {
   background-color: transparent;
   border-radius: 0;
 }
-.desktop-detected .custom-scroll::-webkit-scrollbar-thumb {
+.custom-scroll::-webkit-scrollbar-thumb {
   -moz-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.07);
   -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.07);
   background-clip: padding-box;
@@ -7928,7 +7928,7 @@ button {
   border: none;
   box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.07);
 }
-.desktop-detected .custom-scroll::-webkit-scrollbar-thumb:vertical,
+.custom-scroll::-webkit-scrollbar-thumb:vertical,
 .scrollable::-webkit-scrollbar-thumb:horizontal {
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -7937,18 +7937,16 @@ button {
   background-color: #bfbfbf;
   border-radius: 0;
 }
-.desktop-detected .custom-scroll::-webkit-scrollbar-thumb:active {
+.custom-scroll::-webkit-scrollbar-thumb:active {
   -moz-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.33);
   -webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.33);
   background-color: rgba(0, 0, 0, 0.44);
   box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.33);
 }
-.desktop-detected .custom-scroll::-webkit-scrollbar-thumb:hover {
+.custom-scroll::-webkit-scrollbar-thumb:hover {
   background-color: #959595;
 }
-.mobile-detected .custom-scroll {
-  -webkit-overflow-scrolling: touch;
-}
+
 
 /*
  * PACE PROGRESS BAR
@@ -8866,22 +8864,7 @@ button {
   .visible-mobile {
     display: inline-block !important;
   }
-  /* activity panel */
-  .ajax-notifications {
-    height: 250px;
-  }
-  .ajax-dropdown {
-    width: 299px;
-    height: 320px;
-    left: 0;
-    top: 49px;
-  }
-  .ajax-dropdown:before {
-    margin-left: -14px;
-  }
-  .ajax-dropdown:after {
-    margin-left: -13px;
-  }
+
   /*
 	 * header search
 	 */
@@ -8931,27 +8914,7 @@ button {
     overflow: hidden;
   }
 }
-/*
- * ANIMATED
- */
-/* Navigation icon first level 
-.desktop-detected nav > ul > li > a:hover i {
-	-webkit-animation-name: wobble;
-	-moz-animation-name: wobble;
-	-o-animation-name: wobble;
-	animation-name: wobble;
-}
 
-.desktop-detected nav > ul > li > a:hover i {
-	-webkit-animation-duration: .7s;
-	-moz-animation-duration: .7s;
-	-o-animation-duration: .7s;
-	animation-duration: .7s;
-	-webkit-animation-fill-mode: both;
-	-moz-animation-fill-mode: both;
-	-o-animation-fill-mode: both;
-	animation-fill-mode: both;
-}*/
 /* All dropdowns */
 .open > .dropdown-menu {
   -webkit-animation-name: flipInX;
@@ -8969,17 +8932,4 @@ button {
   -o-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-.active + .ajax-dropdown {
-  -webkit-animation-name: flipInY;
-  -moz-animation-name: flipInY;
-  -o-animation-name: flipInY;
-  animation-name: flipInY;
-  -webkit-animation-duration: .7s;
-  -moz-animation-duration: .7s;
-  -o-animation-duration: .7s;
-  animation-duration: .7s;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
+

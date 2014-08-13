@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="459777a9-2dde-4610-a65a-6e75c866986a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/smartadmin-production-cleaned.css" afterPath="$PROJECT_DIR$/app/css/smartadmin-production-cleaned.css" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Documents\GitHub\StringDetectorWebClient-Angular\app\js\app - Copy.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/app.js" afterPath="$PROJECT_DIR$/app/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/custom.css" afterPath="$PROJECT_DIR$/app/css/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/custom.js" afterPath="$PROJECT_DIR$/app/js/custom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/jobs.html" afterPath="$PROJECT_DIR$/app/jobs.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/smartadmin-production.css" afterPath="$PROJECT_DIR$/app/css/smartadmin-production.css" />
     </list>
     <ignored path="StringDetectorWebClient-Angular.iws" />
@@ -26,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="jobs.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="jobs.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/jobs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.4" vertical-offset="10230" max-vertical-offset="10962">
-              <caret line="502" column="39" selection-start-line="502" selection-start-column="39" selection-end-line="502" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.4861111" vertical-offset="126" max-vertical-offset="10710">
+              <caret line="21" column="99" selection-start-line="21" selection-start-column="92" selection-end-line="21" selection-end-column="99" />
               <folding>
                 <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#1;n#header#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -52,28 +56,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/js/app.js">
+      <file leaf-file-name="custom.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/js/custom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.88" vertical-offset="0" max-vertical-offset="18921">
-              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+            <state vertical-scroll-proportion="-10.36" vertical-offset="30779" max-vertical-offset="36372">
+              <caret line="1478" column="7" selection-start-line="1478" selection-start-column="7" selection-end-line="1478" selection-end-column="7" />
               <folding>
-                <marker date="1407832919257" expanded="false" signature="4534:4545" placeholder="..." />
-                <marker date="1407832919257" expanded="false" signature="20384:20431" placeholder="..." />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="smartadmin-production.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="smartadmin-production.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/css/smartadmin-production.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.71056664" vertical-offset="3652" max-vertical-offset="188811">
-              <caret line="196" column="1" selection-start-line="140" selection-start-column="0" selection-end-line="196" selection-end-column="1" />
+            <state vertical-scroll-proportion="1092.04" vertical-offset="187133" max-vertical-offset="187761">
+              <caret line="6311" column="38" selection-start-line="6311" selection-start-column="38" selection-end-line="6311" selection-end-column="38" />
               <folding>
                 <element signature="e#116617#117876#1" expanded="true" />
                 <element signature="e#127401#128070#2" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/css/custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="50310" max-vertical-offset="51870">
+              <caret line="245" column="0" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,12 +104,14 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/js/custom.js" />
         <option value="$PROJECT_DIR$/app/jobs - Copy.html" />
         <option value="$PROJECT_DIR$/app/css/smartadmin-production-cleaned.css" />
-        <option value="$PROJECT_DIR$/app/js/app.js" />
-        <option value="$PROJECT_DIR$/app/jobs.html" />
+        <option value="$PROJECT_DIR$/app/css/custom.css" />
         <option value="$PROJECT_DIR$/app/css/smartadmin-production.css" />
+        <option value="$PROJECT_DIR$/app/js/app - Copy.js" />
+        <option value="$PROJECT_DIR$/app/js/app.js" />
+        <option value="$PROJECT_DIR$/app/js/custom.js" />
+        <option value="$PROJECT_DIR$/app/jobs.html" />
       </list>
     </option>
   </component>
@@ -390,7 +405,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -597,26 +612,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="27903" max-vertical-offset="33369">
-          <caret line="1336" column="10" selection-start-line="1336" selection-start-column="10" selection-end-line="1336" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/app - Copy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="15062" max-vertical-offset="29085">
-          <caret line="728" column="398" selection-start-line="728" selection-start-column="398" selection-end-line="728" selection-end-column="398" />
-          <folding>
-            <marker date="1407764960787" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407764960787" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1407764960787" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/css/smartadmin-skins.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.46454415" vertical-offset="615" max-vertical-offset="24045">
@@ -651,21 +646,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="50310" max-vertical-offset="51870">
+          <caret line="245" column="0" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/smartadmin-production.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1092.04" vertical-offset="187133" max-vertical-offset="187761">
+          <caret line="6311" column="38" selection-start-line="6311" selection-start-column="38" selection-end-line="6311" selection-end-column="38" />
+          <folding>
+            <element signature="e#116617#117876#1" expanded="true" />
+            <element signature="e#127401#128070#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.88" vertical-offset="0" max-vertical-offset="18921">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.6353111" vertical-offset="23" max-vertical-offset="735">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.36" vertical-offset="30779" max-vertical-offset="36372">
+          <caret line="1478" column="7" selection-start-line="1478" selection-start-column="7" selection-end-line="1478" selection-end-column="7" />
           <folding>
-            <marker date="1407832919257" expanded="false" signature="4534:4545" placeholder="..." />
-            <marker date="1407832919257" expanded="false" signature="20384:20431" placeholder="..." />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/jobs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.4" vertical-offset="10230" max-vertical-offset="10962">
-          <caret line="502" column="39" selection-start-line="502" selection-start-column="39" selection-end-line="502" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.4861111" vertical-offset="126" max-vertical-offset="10710">
+          <caret line="21" column="99" selection-start-line="21" selection-start-column="92" selection-end-line="21" selection-end-column="99" />
           <folding>
             <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#header#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -682,25 +703,6 @@
             <element signature="n#style#0;n#fieldset#0;n#form#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#fieldset#0;n#form#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/smartadmin-production-cleaned.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.9102745" vertical-offset="8568" max-vertical-offset="123060">
-          <caret line="49" column="22" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/smartadmin-production.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71056664" vertical-offset="3652" max-vertical-offset="188811">
-          <caret line="196" column="1" selection-start-line="140" selection-start-column="0" selection-end-line="196" selection-end-column="1" />
-          <folding>
-            <element signature="e#116617#117876#1" expanded="true" />
-            <element signature="e#127401#128070#2" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,8 +1,22 @@
 /**
  * Created by t_yuejial on 4/28/2014.
  */
-// DO NOT REMOVE : GLOBAL FUNCTIONS!
-// gloable varaiable
+/*
+ * VARIABLES
+ * Description: All Global Vars
+ */
+// The rate at which the menu expands revealing child elements on click
+$.menu_speed = 235;
+
+// Note: You will also need to change this variable in the "variable.less" file.
+$.navbar_height = 49;
+
+/*
+ * APP DOM REFERENCES
+ * Description: Obj DOM reference, please try to avoid changing these
+ */
+$.root_ = $('body');
+$.left_panel = $('#left-panel');
 // datatables  object
 var  jobsObjTable;
 var  historyObjTable;
@@ -1291,7 +1305,27 @@ var update_size = function() {
     }
 }
 
+// Fix page and nav height
+function nav_page_height() {
+    var setHeight = $('#main').height();
+    //menuHeight = $.left_panel.height();
+    $.navbar_height=0;
+    var windowHeight = $(window).height() - $.navbar_height;
+    //set height
+
+    if (setHeight > windowHeight) {// if content height exceedes actual window height and menuHeight
+        $.left_panel.css('min-height', setHeight + 'px');
+        $.root_.css('min-height', setHeight + $.navbar_height + 'px');
+
+    } else {
+        $.left_panel.css('min-height', windowHeight + 'px');
+        $.root_.css('min-height', windowHeight + 'px');
+    }
+}
+
+
 function windowResize(){
+    nav_page_height();
     clearTimeout(window.refresh_size);
     window.refresh_size = setTimeout(function() { update_size(); }, 10);
     if($(dtBasicWrapper).width()<$(dtBasic).width()||$(dtBasic).width()<320){
@@ -1333,8 +1367,117 @@ function windowResize(){
 }
 
 
+/*
+ * CUSTOM MENU PLUGIN
+ */
+
+$.fn.extend({
+    //pass the options variable to the function
+    jarvismenu : function(options) {
+
+        var defaults = {
+            accordion : 'true',
+            speed : 200,
+            closedSign : '[+]',
+            openedSign : '[-]'
+        };
+
+        // Extend our default options with those provided.
+        var opts = $.extend(defaults, options);
+        //Assign current element to variable, in this case is UL element
+        var $this = $(this);
+
+        //add a mark [+] to a multilevel menu
+        $this.find("li").each(function() {
+            if ($(this).find("ul").size() != 0) {
+                //add the multilevel sign next to the link
+                $(this).find("a:first").append("<b class='collapse-sign'>" + opts.closedSign + "</b>");
+
+                //avoid jumping to the top of the page when the href is an #
+                if ($(this).find("a:first").attr('href') == "#") {
+                    $(this).find("a:first").click(function() {
+                        return false;
+                    });
+                }
+            }
+        });
+
+        //open active level
+        $this.find("li.active").each(function() {
+            $(this).parents("ul").slideDown(opts.speed);
+            $(this).parents("ul").parent("li").find("b:first").html(opts.openedSign);
+            $(this).parents("ul").parent("li").addClass("open")
+        });
+
+        $this.find("li a").click(function() {
+
+            if ($(this).parent().find("ul").size() != 0) {
+
+                if (opts.accordion) {
+                    //Do nothing when the list is open
+                    if (!$(this).parent().find("ul").is(':visible')) {
+                        parents = $(this).parent().parents("ul");
+                        visible = $this.find("ul:visible");
+                        visible.each(function(visibleIndex) {
+                            var close = true;
+                            parents.each(function(parentIndex) {
+                                if (parents[parentIndex] == visible[visibleIndex]) {
+                                    close = false;
+                                    return false;
+                                }
+                            });
+                            if (close) {
+                                if ($(this).parent().find("ul") != visible[visibleIndex]) {
+                                    $(visible[visibleIndex]).slideUp(opts.speed, function() {
+                                        $(this).parent("li").find("b:first").html(opts.closedSign);
+                                        $(this).parent("li").removeClass("open");
+                                    });
+
+                                }
+                            }
+                        });
+                    }
+                }// end if
+                if ($(this).parent().find("ul:first").is(":visible") && !$(this).parent().find("ul:first").hasClass("active")) {
+                    $(this).parent().find("ul:first").slideUp(opts.speed, function() {
+                        $(this).parent("li").removeClass("open");
+                        $(this).parent("li").find("b:first").delay(opts.speed).html(opts.closedSign);
+                    });
+
+                } else {
+                    $(this).parent().find("ul:first").slideDown(opts.speed, function() {
+                        /*$(this).effect("highlight", {color : '#616161'}, 500); - disabled due to CPU clocking on phones*/
+                        $(this).parent("li").addClass("open");
+                        $(this).parent("li").find("b:first").delay(opts.speed).html(opts.openedSign);
+                    });
+                } // end else
+            } // end if
+        });
+    } // end function
+});
+
+
+
 $(document).ready(function() {
-	pageSetUp();
+    // INITIALIZE LEFT NAV
+    if (!null) {
+        $('nav ul').jarvismenu({
+            accordion : true,
+            speed : $.menu_speed,
+            closedSign : '<em class="fa fa-expand-o"></em>',
+            openedSign : '<em class="fa fa-collapse-o"></em>'
+        });
+    } else {
+        alert("Error - menu anchor does not exist");
+    }
+
+    // COLLAPSE LEFT NAV
+    $('.minifyme').click(function(e) {
+        $('body').toggleClass("minified");
+       // $(this).effect("highlight", {}, 500);
+        e.preventDefault();
+    });
+
     /*
      * Load the jobs when page initiated
      * we need to load the all jobs with job name and job status
