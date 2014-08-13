@@ -79,6 +79,8 @@ function registBuildHistoryFormListener(jobName){
 
 function registeJobFormValidationListener(jobName){
     $(basicSettingForm+jobName).validate({
+        errorClass: "invalid",
+        errorElement: "em",
         rules: {
             jobName : {
                 required :true//,
@@ -106,6 +108,8 @@ function registeJobFormValidationListener(jobName){
     });
 
     $(scmSettingForm+jobName).validate({
+        errorClass: "invalid",
+        errorElement: "em",
         rules: {
             p4Username : {
                 required :true
@@ -398,7 +402,7 @@ function downloadProjectReportClick(){
     var spiltArray = $(this).attr("id").split(seperator);
     var jobName = spiltArray[spiltArray.length-1];
     //download(jobName+"_latest_report.txt",$(projectReportInput+jobName).html());
-    $.fileDownload("../api/jobs/"+jobName+"/report/lastBuild/file", {
+    $.fileDownload(serviceUrl+"/api/jobs/"+jobName+"/report/lastBuild/file", {
         successCallback: function (url) {
 
         },
@@ -413,7 +417,7 @@ function downloadBuildViewReportClick(){
     var jobName = $(this).attr("data-job-name");
     var buildNumber =  $(this).attr("data-build-number");
 
-    $.fileDownload("../api/jobs/"+jobName+"/report/"+buildNumber+"/file", {
+    $.fileDownload(serviceUrl+"/api/jobs/"+jobName+"/report/"+buildNumber+"/file", {
         successCallback: function (url) {
 
         },
@@ -1674,6 +1678,8 @@ $(document).ready(function() {
     );
 
     $(createJobForm).validate({
+        errorClass: "invalid",
+        errorElement: "em",
         rules: {
             jobName : {
                 required :true,
